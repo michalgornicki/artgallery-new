@@ -29,7 +29,7 @@ function closeMenu() {
 
 function changeBackground() {
   if (document.body.scrollTop > 850 && document.body.scrollTop < 2699 || document.documentElement.scrollTop > 850 && document.documentElement.scrollTop < 2699){
-  document.getElementById("navbar").style.top="-150px";
+  document.getElementById("navbar").style.top="-200px";
   document.getElementById("navbar").style.transitionDelay="1.2s";
   document.getElementsByClassName("gallery")[0].style.filter="opacity(0)";
   document.getElementsByClassName("gallery")[1].style.filter="opacity(0)";

@@ -75,7 +75,6 @@ body {
   padding-left: 7%;
   padding-right: 7%;
   text-align: justify;
-  line-height: 5vmin;
   background-color: white;
   border-bottom: solid 1px rgb(0, 0, 0);
 }
@@ -279,6 +278,13 @@ a {
   font-size: 2vmin;
 }
 
+.bold{
+  font-weight: 400;
+  font-size: 3vmin;
+  background-color: rgb(240, 240, 240);
+  padding: 1vmin;
+}
+
 
 @media only screen and (max-device-width: 600px), (max-width: 600px) {
   .container {
@@ -403,6 +409,17 @@ a {
 
   .bottom-container {
     font-size: 4vmin;
+  }
+
+  .bold{
+    font-weight: 400;
+    font-size: 6vmin;
+    background-color: rgb(240, 240, 240);
+    padding: 1vmin;
+  }
+
+  .container-text{
+    font-size: 4.5vmin;
   }
 
 }

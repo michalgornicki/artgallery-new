@@ -109,7 +109,6 @@ a {
   padding-left: 7%;
   padding-right: 7%;
   text-align: justify;
-  line-height: 35px;
   background-color: white;
   text-indent: 50px;
 }
@@ -380,6 +379,13 @@ a {
   font-size: 2vmin;
 }
 
+.bold{
+  font-weight: 400;
+  font-size: 3vmin;
+  background-color: rgb(240, 240, 240);
+  padding: 1vmin;
+}
+
 @media only screen and (max-device-width: 600px), (max-width: 600px) {
   .container {
     width: 100%;
@@ -508,6 +514,21 @@ a {
 
   .bottom-container {
     font-size: 4vmin;
+  }
+
+  .container-text{
+    font-size: 4.5vmin;
+  }
+
+  #slide-title{
+    font-size: 8vmin;
+  }
+
+  .bold{
+    font-weight: 400;
+    font-size: 6vmin;
+    background-color: rgb(240, 240, 240);
+    padding: 1vmin;
   }
 
 }
