@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- BOOTSTRAP CDN AND CUSTOMISED CSS LINKS -->
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link href="http://fonts.googleapis.com/css?family=Amiri&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <title></title>
+</head>
+
+<body onresize="linkToIcon()">
+  <div id="top">
+  <div id="navbar" data-aos="fade-down" data-aos-duration="2500">
+    <ul id="list">
+      <li id="home-nav">
+        <a id="home-link" href="index.html">NOWE EKSPOZYCJE</a>
+      </li>
+      <li id="gallery-nav">
+        <a id="gallery-link" href="gallery/index.html">GALERIA</a>
+      </li>
+      <li id="contact-nav">
+        <a id="contact-link" href="contact/index.html">KONTAKT</a>
+      </li>
+    </ul>
+  </div>
+
+  <a href="#top">
+    <img src="images/up.png" alt="" class="up">
+  </a>
+
+  <div class="gallery">
+    <div id="gallery-title" data-aos="fade-down" data-aos-duration="2500">
+      <a href="#main-container">OTHERSIDE</a>
+    </div>
+    <div id="gallery-subtitle" data-aos="fade-down" data-aos-duration="2500">
+      MODERN ART
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="container" id="main-container" data-aos="fade-up" data-aos-duration="2500">
+      <img id="image1" src="images/background1.jpg" alt="" />
+
+      <div class="container-header">
+        <div id="slide-title-medium">
+          LIGHT FESTIVAL 2020
+        </div>
+        <div id="slide-title-tiny">
+          30 SIERPNIA - 7 PAŹDZIERNIKA
+        </div>
+      </div>
+    </div>
+
+    <div id="slide-title-big">NOWE WYSTAWY</div>
+
+    <div class="container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="container-text" data-aos="fade-in" data-aos-duration="1500">
+        <div id="slide-title">Fauna Afryki</div>
+        &emsp;
+        <b>Wystawa zainspirowana została dalekimi
+          wyprawami do środkowej Afryki. Umieszczenie
+          egzotycznych zwierząt na pierwszym planie,
+          sugestywne i dynamiczne sceny, nacisk na
+          prezencję bujnej flory to podstawowe cechy
+          ukazanych dzieł. Wpływ kultury Czarnego Lądu na
+          kształt malarstwa europejskiego osiągnął apogeum
+          w połowie XX wieku.
+        </b>
+        <br />
+        <br />
+        &emsp; Tingatinga – pochodzący z lat 60. XX w.
+        styl malarski Tanzanii. Nazwa wywodzi się od
+        nazwiska Edwarda Saidiego Tingatingi.
+        Przedstawicieli tego nurtu inspirowała fauna
+        Afryki Wschodniej, szczególnie tzw. wielka piątka:
+        słoń, hipopotam, żyrafa, lew, antylopa i ptak.
+        Pierwsze przedstawienia tych zwierząt przypominają
+        wizerunki sztuki naskalnej. Przypuszcza się, że
+        wpływ na twórczość Tingatingi mogły mieć
+        piktogramy pozostawione przez ludność Sandawe i
+        Hadza. Obrazy tingatinga w swojej prostocie
+        nawiązują do tych przedstawień.
+      </div>
+
+      <div class="carousel1 single-item-fade" data-aos="fade-up" data-aos-duration="1500">
+        <div>
+          <img class="carousel-item" src="images/animals1.jpg" alt="" />
+          <div class="image-title">Rysunek Jaka</div>
+          <div class="image-subtitle">James Garcia</div>
+        </div>
+
+        <div>
+          <img class="carousel-item" src="images/animals2.jpg" alt="" />
+          <div class="image-title">Rysunek Sowy</div>
+          <div class="image-subtitle">Artistic Panda</div>
+        </div>
+
+        <div>
+          <img class="carousel-item" src="images/animals3.jpg" alt="" />
+          <div class="image-title">Rysunek Pytona</div>
+          <div class="image-subtitle">Helena Forde</div>
+        </div>
+
+        <div>
+          <img class="carousel-item" src="images/animals4.jpg" alt="" />
+          <div class="image-title">Rysunek Tukana</div>
+          <div class="image-subtitle">Helena Forde</div>
+        </div>
+
+        <div>
+          <img class="carousel-item" src="images/animals5.jpg" alt="" />
+          <div class="image-title">Rysunek Nosorożca</div>
+          <div class="image-subtitle">Helena Forde</div>
+        </div>
+
+        <div>
+          <img class="carousel-item" src="images/animals6.jpg" alt="" />
+          <div class="image-title">Rysunek Tygrysa</div>
+          <div class="image-subtitle">Helena Forde</div>
+        </div>
+
+        <div>
+          <img class="carousel-item" src="images/animals7.jpg" alt="" />
+          <div class="image-title">Rysunek Ptaka</div>
+          <div class="image-subtitle">Helena Forde</div>
+        </div>
+      </div>
+
+      <div class="image-wrap">
+
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/animals8.jpg" alt=""
+          data-aos="fade-up-left" data-aos-duration="1200" data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/animals9.jpg" alt=""
+          data-aos="fade-up-left" data-aos-duration="1200" data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/animals10.jpg" alt=""
+          data-aos="fade-up-left" data-aos-duration="1200" data-aos-offset="-200" />
+
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/animals11.jpg" alt=""
+          data-aos="fade-up-right" data-aos-duration="1200" data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/animals12.jpg" alt=""
+          data-aos="fade-up-right" data-aos-duration="1200" data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/animals13.jpg" alt=""
+          data-aos="fade-up-right" data-aos-duration="1200" data-aos-offset="-200" />
+
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/animals14.jpg" alt=""
+          data-aos="fade-up-left" data-aos-duration="1200" data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/animals15.jpg" alt=""
+          data-aos="fade-up-left" data-aos-duration="1200" data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/animals16.jpg" alt=""
+          data-aos="fade-up-left" data-aos-duration="1200" data-aos-offset="-200" />
+
+      </div>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="container-text" data-aos="fade-in" data-aos-duration="1500">
+        <div id="slide-title">Krajobrazy Ameryki Północnej</div>
+        &emsp;
+        <b>Malarstwo pejzażowe, zwane także sztuką
+          pejzażową, to przedstawianie naturalnych
+          scenerii, takich jak góry, doliny, drzewa, rzeki
+          i lasy, zwłaszcza tam, gdzie głównym tematem
+          jest szeroki widok - z jego elementami ułożonymi
+          w spójną kompozycję. W innych pracach tła
+          krajobrazowe dla postaci mogą nadal stanowić
+          ważną część pracy. Niebo prawie zawsze jest
+          uwzględnione w widoku, a często elementem
+          kompozycji jest pogoda.
+        </b>
+        <br />
+        <br />
+        &emsp; Malarstwo pejzażowe, zwane także sztuką
+        pejzażową, to przedstawianie naturalnych scenerii,
+        takich jak góry, doliny, drzewa, rzeki i lasy,
+        zwłaszcza tam, gdzie głównym tematem jest szeroki
+        widok - z jego elementami ułożonymi w spójną
+        kompozycję. W innych pracach tła krajobrazowe dla
+        postaci mogą nadal stanowić ważną część pracy.
+        Niebo prawie zawsze jest uwzględnione w widoku, a
+        często elementem kompozycji jest pogoda.
+        Szczegółowe krajobrazy jako odrębny przedmiot nie
+        występują we wszystkich tradycjach artystycznych i
+        rozwijają się, gdy istnieje już wyrafinowana
+        tradycja reprezentowania innych tematów.
+      </div>
+
+      <div class="carousel2 single-item-slider" data-aos="fade-up" data-aos-duration="1500">
+        <div>
+          <img class="carousel-item" src="images/landscape1.jpg" alt="" />
+          <div class="image-title">
+            Grasmere From The Rydal Road
+          </div>
+          <div class="image-subtitle">Francis Towne</div>
+        </div>
+
+        <div>
+          <img class="carousel-item" src="images/landscape2.jpg" alt="" />
+          <div class="image-title">Watercolour World</div>
+          <div class="image-subtitle">
+            William Andrews Nesfield
+          </div>
+        </div>
+
+        <div>
+          <img class="carousel-item" src="images/landscape3.jpg" alt="" />
+          <div class="image-title">Lancaster Sands</div>
+          <div class="image-subtitle">William Turner</div>
+        </div>
+      </div>
+
+      <div class="image-wrap">
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/landscape4.jpg" alt=""
+          data-aos="fade-left" data-aos-duration="1200"  data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/landscape5.jpg" alt=""
+          data-aos="fade-left" data-aos-duration="1200"  data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/landscape6.jpg" alt=""
+          data-aos="fade-left" data-aos-duration="1200"  data-aos-offset="-200" />
+      </div>
+
+      <div class="image-wrap">
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/landscape7.jpg" alt=""
+          data-aos="fade-up" data-aos-duration="1200"  data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/landscape8.jpg" alt=""
+          data-aos="fade-up" data-aos-duration="1200"  data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/landscape9.jpg" alt=""
+          data-aos="fade-up" data-aos-duration="1200"  data-aos-offset="-200" />
+      </div>
+
+      <div class="image-wrap">
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/landscape10.jpg" alt=""
+          data-aos="fade-right" data-aos-duration="1200"  data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/landscape11.jpg" alt=""
+          data-aos="fade-right" data-aos-duration="1200"  data-aos-offset="-200" />
+        <img class="image-small" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/landscape12.jpg" alt=""
+          data-aos="fade-right" data-aos-duration="1200"  data-aos-offset="-200" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-text" data-aos="fade-in" data-aos-duration="1500">
+        <div id="slide-title">Portrety XX wieku</div>
+
+        &emsp;
+        <b>Malarstwo portretowe to gatunek w malarstwie,
+          którego intencją jest przedstawienie określonego
+          ludzkiego podmiotu. Termin „malarstwo
+          portretowe” może również opisać faktycznie
+          namalowany portret.
+        </b>
+        <br />
+        <br />
+        &emsp; Historycznie, portrety upamiętniają przede
+        wszystkim bogatych i wpływowych. Z biegiem czasu
+        jednak stało się powszechne, że klienci z klasy
+        średniej zamawiali portrety swoich rodzin i
+        współpracowników. Dziś portrety są nadal zamawiane
+        przez rządy, korporacje, grupy, kluby i osoby
+        prywatne. Oprócz malarstwa portrety można
+        wykonywać również w innych mediach, takich jak
+        odbitki (w tym akwaforta i litografia),
+        fotografia, wideo i media cyfrowe. Wydawać by się
+        mogło oczywiste, że namalowany portret ma na celu
+        uzyskanie podobizny siedzącej, która jest
+        rozpoznawalna dla tych, którzy go widzieli, a
+        najlepiej jest bardzo dobrym zapisem ich wyglądu.
+        W rzeczywistości koncepcja ta rozwijała się powoli
+        i minęły wieki, zanim artyści z różnych tradycji
+        nabyli odrębne umiejętności malowania dobrego
+        podobieństwa.
+      </div>
+
+      <div class="portrait-carousel-wrapper" >
+        <div class="carousel3 multi-item-slider" data-aos="fade" data-aos-duration="1500">
+          <div>
+            <img class="carousel-item-vertical" src="images/portrait1.jpg" alt="" />
+            <div class="image-title">
+              Rysunek czarnoskórego mężczyzny
+            </div>
+            <div class="image-subtitle">Jance McAllen</div>
+          </div>
+
+          <div>
+            <img class="carousel-item-vertical" src="images/portrait2.jpg" alt="" />
+            <div class="image-title">Rysunek młodej dziewczyny</div>
+            <div class="image-subtitle">
+              Françoise Nielly
+            </div>
+          </div>
+
+          <div>
+            <img class="carousel-item-vertical" src="images/portrait3.jpg" alt="" />
+            <div class="image-title">Rysunek dziewczynki</div>
+            <div class="image-subtitle">
+              Isabella Moravetz
+            </div>
+          </div>
+
+          <div>
+            <img class="carousel-item-vertical" src="images/portrait4.jpg" alt="" />
+            <div class="image-title">Rysunek dziewczyny z kręconymi włosami</div>
+            <div class="image-subtitle">James Connor</div>
+          </div>
+        </div>
+
+        <div class="carousel4 multi-item-slider-alter" data-aos="fade" data-aos-duration="1500" data-aos-offset="100">
+          <div>
+            <img class="carousel-item-vertical" src="images/portrait5.jpg" alt="" />
+            <div class="image-title">Rysunek czarnoskórej dziewczynki</div>
+            <div class="image-subtitle">
+              Aleksiej Dobrawkin
+            </div>
+          </div>
+
+          <div>
+            <img class="carousel-item-vertical" src="images/portrait6.jpg" alt="" />
+            <div class="image-title">Rysunek czarnoskórej kobiety</div>
+            <div class="image-subtitle">
+              Tuva Mathilde Løland
+            </div>
+          </div>
+
+          <div>
+            <img class="carousel-item-vertical" src="images/portrait7.jpg" alt="" />
+            <div class="image-title">Rysunek uśmiechniętej kobiety</div>
+            <div class="image-subtitle">Maria Karovna</div>
+          </div>
+
+          <div>
+            <img class="carousel-item-vertical" src="images/portrait8.jpg" alt="" />
+            <div class="image-title">Rysunek mężczyzny z długimi włosami</div>
+            <div class="image-subtitle">Anne Sobiesky</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+  </div>
+
+  <div class="bottom-container">
+    © 2021 Developed by Michał Górnicki
+  </div>
+
+</body>
+
+<!-- JQUERY AND JS CDNS -->
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="myScript.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 0,
+    once: false,
+  });
+</script>
+
+</html>
