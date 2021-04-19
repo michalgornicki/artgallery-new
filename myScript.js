@@ -24,7 +24,7 @@ function changeBackground() {
   ) {
     document.getElementById("slide-title-big").style.color =
       "rgb(0, 0, 0)";
-    document.getElementById("navbar").style.top = "-150px";
+    document.getElementById("navbar").style.top = "-200px";
     document.getElementById("navbar").style.transitionDelay = "1.2s";
     document.getElementsByClassName("gallery")[0].style.filter =
       "opacity(0)";
