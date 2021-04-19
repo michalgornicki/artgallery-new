@@ -109,7 +109,6 @@ a {
   padding-bottom: 70px;
   padding-left: 7%;
   padding-right: 7%;
-  text-align: justify;
   background-color: white;
   text-indent: 50px;
   line-height: 150%;
@@ -522,7 +521,8 @@ a {
   }
 
   .container-text{
-    font-size: 4.5vmin;
+    font-size: 5.2vmin;
+    line-height: 175%;
   }
 
   #slide-title{
