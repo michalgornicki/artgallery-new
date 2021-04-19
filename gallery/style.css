@@ -420,7 +420,8 @@ a {
   }
 
   .container-text{
-    font-size: 4.5vmin;
+    font-size: 5.2vmin;
+    line-height: 175%;
   }
 
 }
