@@ -70,13 +70,15 @@ body {
 .container-text {
   width: 86%;
   font-size: 2.3vmin;
+  font-weight: 400;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 7%;
   padding-right: 7%;
-  text-align: justify;
   background-color: white;
   border-bottom: solid 1px rgb(0, 0, 0);
+  line-height: 150%;
+
 }
 
 
@@ -282,7 +284,7 @@ a {
   font-weight: 400;
   font-size: 3vmin;
   background-color: rgb(240, 240, 240);
-  padding: 1vmin;
+  padding: 4vmin;
 }
 
 
@@ -415,7 +417,6 @@ a {
     font-weight: 400;
     font-size: 6vmin;
     background-color: rgb(240, 240, 240);
-    padding: 1vmin;
   }
 
   .container-text{

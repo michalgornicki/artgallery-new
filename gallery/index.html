@@ -14,7 +14,7 @@
   <title></title>
 </head>
 
-<body>
+<body onresize="linkToIcon()">
   <div id="top">
     <div id="navbar" data-aos="fade-down" data-aos-duration="2500">
       <ul id="list">
@@ -69,8 +69,8 @@
         </div>
 
         <div>
-          <img class=image-large onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/gallery1.jpg" alt=""
-            data-aos="fade">
+          <img class=image-large onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="images/gallery1.jpg"
+            alt="" data-aos="fade">
         </div>
 
 
@@ -109,9 +109,11 @@
         <div class="container-header">Neoekspresjonizm, wystawa północna</div>
 
         <div class="container-text" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
-          <div class="bold">XIX wiek w sztuce francuskiej charakteryzuje się ciągłą walką między tradycyjnie wykształconymi artystami,
+          <div class="bold">XIX wiek w sztuce francuskiej charakteryzuje się ciągłą walką między tradycyjnie
+            wykształconymi artystami,
             wspieranymi przez oficjalną politykę, a rosnącą liczbą artystów, którzy woleli pracować indywidualnie i na
-            własne ryzyko. </div></br> Przegląd sytuacji historycznej jest trudny, nawet sto lat później. Ale najwyraźniej
+            własne ryzyko. </div></br> Przegląd sytuacji historycznej jest trudny, nawet sto lat później. Ale
+          najwyraźniej
           przeciwnicy oficjalnej polityki zyskali poparcie po upadku II Cesarstwa i odegrali kluczową rolę w
           przekierowaniu francuskiej polityki kulturalnej na stanowiska liberalne. Zatem rozpad Société Nationale des
           Beaux-Arts w 1890 r. Można uznać za pierwszą manifestację secesji.
@@ -137,7 +139,8 @@
         <div class="container-header">Nowe nurty, wystawa zachodnia</div>
 
         <div class="container-text" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="-400">
-          <div class="bold">W otoczeniu kilku malarzy Rabindranath zawsze chciał malować. Pisanie i muzyka, dramatopisarstwo i
+          <div class="bold">W otoczeniu kilku malarzy Rabindranath zawsze chciał malować. Pisanie i muzyka,
+            dramatopisarstwo i
             aktorstwo przyszły mu naturalnie i prawie bez treningu, tak jak stało się to z kilkoma innymi członkami jego
             rodziny, a nawet w jeszcze większym stopniu. </div> </br> Ale malowanie wymykało mu się. Jednak wielokrotnie
           próbował opanować tę sztukę i jest kilka odniesień do tego w jego wczesnych listach i wspomnieniach. Na
@@ -191,6 +194,6 @@
 <script type="text/javascript" src="../slick/slick.min.js"></script>
 <script src="myScript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({ offset: 0, once: false });</script>
+<script>AOS.init({ offset: 0, once: true });</script>
 
 </html>

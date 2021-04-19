@@ -3,80 +3,49 @@ window.onload = function() {
   document.getElementsByClassName("content")[0].style.filter="brightness(1)";
   document.getElementById("navbar").style.filter="opacity(1)";
   document.getElementsByClassName("gallery")[0].style.filter="opacity(1)";
-  document.getElementsByClassName("gallery")[1].style.filter="opacity(1)";
   document.getElementById("navbar").style.transitionDelay="0s";
   document.getElementsByClassName("gallery")[0].style.transitionDelay="0s";
-  document.getElementsByClassName("gallery")[1].style.transitionDelay="0s";
   document.getElementById("home-nav").style.transitionDelay="0s";
   document.getElementById("gallery-nav").style.transitionDelay="0s";
   document.getElementById("contact-nav").style.transitionDelay="0s";
 }
 
-function openMenu() {
-  document.getElementById("navbar").style.left="0px";
-  document.getElementById("navbar").style.visibility="visible";
-  document.getElementById("burger-button").style.filter="opacity(0.0)";
-  document.getElementById("close-button").style.filter="opacity(1)";
-}
-
-function closeMenu() {
-  document.getElementById("navbar").style.left="-100%";
-  document.getElementById("navbar").style.visibility="hidden";
-  document.getElementById("burger-button").style.filter="opacity(1)";
-  document.getElementById("close-button").style.filter="opacity(0)";
-}
 
 
-function changeBackground() {
-  if (document.body.scrollTop > 850 && document.body.scrollTop < 2699 || document.documentElement.scrollTop > 850 && document.documentElement.scrollTop < 2699){
-  document.getElementById("navbar").style.top="-200px";
-  document.getElementById("navbar").style.transitionDelay="1.2s";
-  document.getElementsByClassName("gallery")[0].style.filter="opacity(0)";
-  document.getElementsByClassName("gallery")[1].style.filter="opacity(0)";
-  document.getElementsByClassName("gallery")[0].style.transitionDelay="0.7s";
-  document.getElementsByClassName("gallery")[1].style.transitionDelay="0.7s";
-  document.getElementById("home-nav").style.filter="opacity(0)";
-  document.getElementById("gallery-nav").style.filter="opacity(0)";
-  document.getElementById("contact-nav").style.filter="opacity(0)";
-  document.getElementById("home-nav").style.transitionDelay="0.3s";
-  document.getElementById("gallery-nav").style.transitionDelay="0.6s";
-  document.getElementById("contact-nav").style.transitionDelay="0.9s";
-}
+function hideNavbar() {
+  if (
+    document.body.scrollTop > 850 ||
+    document.documentElement.scrollTop > 850
+  ) {
 
-else if (document.body.scrollTop > 2700 || document.documentElement.scrollTop > 2700){
-document.getElementById("navbar").style.top="-150px";
-document.getElementById("navbar").style.transitionDelay="1.2s";
-document.getElementsByClassName("gallery")[0].style.filter="opacity(0)";
-document.getElementsByClassName("gallery")[1].style.filter="opacity(0)";
-document.getElementsByClassName("gallery")[0].style.transitionDelay="0.7s";
-document.getElementsByClassName("gallery")[1].style.transitionDelay="0.7s";
-document.getElementById("home-nav").style.filter="opacity(0)";
-document.getElementById("gallery-nav").style.filter="opacity(0)";
-document.getElementById("contact-nav").style.filter="opacity(0)";
-document.getElementById("home-nav").style.transitionDelay="0.3s";
-document.getElementById("gallery-nav").style.transitionDelay="0.6s";
-document.getElementById("contact-nav").style.transitionDelay="0.9s";
-}
-
-  else {
-    document.getElementById("navbar").style.top="0px";
-    document.getElementById("navbar").style.transitionDelay="0s";
-    document.getElementsByClassName("gallery")[0].style.filter="opacity(1)";
-    document.getElementsByClassName("gallery")[1].style.filter="opacity(1)";
-    document.getElementsByClassName("gallery")[0].style.transitionDelay="1.2s";
-    document.getElementsByClassName("gallery")[1].style.transitionDelay="1.2s";
-    document.getElementById("home-nav").style.filter="opacity(1)";
-    document.getElementById("gallery-nav").style.filter="opacity(1)";
-    document.getElementById("contact-nav").style.filter="opacity(1)";
-    document.getElementById("home-nav").style.transitionDelay="0.6s";
-    document.getElementById("gallery-nav").style.transitionDelay="0.9s";
-    document.getElementById("contact-nav").style.transitionDelay="1.2s";
+    document.getElementById("navbar").style.top = "-200px";
+    document.getElementById("navbar").style.transitionDelay = "1.2s";
+    document.getElementsByClassName("gallery")[0].style.filter =
+      "opacity(0)";
+    document.getElementsByClassName(
+      "gallery"
+    )[0].style.transitionDelay = "0.7s";
+    document.getElementById("home-nav").style.filter = "opacity(0)";
+    document.getElementById("gallery-nav").style.filter =
+      "opacity(0)";
+    document.getElementById("contact-nav").style.filter =
+      "opacity(0)";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+    document.getElementById("navbar").style.transitionDelay = "0s";
+    document.getElementsByClassName("gallery")[0].style.filter =
+      "opacity(1)";
+    document.getElementById("home-nav").style.filter = "opacity(1)";
+    document.getElementById("gallery-nav").style.filter =
+      "opacity(1)";
+    document.getElementById("contact-nav").style.filter =
+      "opacity(1)";
   }
 }
 
 
 window.onscroll = function() {
-  changeBackground()
+  hideNavbar()
 }
 
 $('.single-item-slider').slick({
