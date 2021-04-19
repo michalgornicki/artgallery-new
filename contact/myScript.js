@@ -2,10 +2,8 @@ window.onload = function() {
   linkToIcon();
   document.getElementById("navbar").style.filter="opacity(1)";
   document.getElementsByClassName("gallery")[0].style.filter="opacity(1)";
-  document.getElementsByClassName("gallery")[1].style.filter="opacity(1)";
   document.getElementById("navbar").style.transitionDelay="0s";
   document.getElementsByClassName("gallery")[0].style.transitionDelay="0s";
-  document.getElementsByClassName("gallery")[1].style.transitionDelay="0s";
   document.getElementById("home-nav").style.transitionDelay="0s";
   document.getElementById("gallery-nav").style.transitionDelay="0s";
   document.getElementById("contact-nav").style.transitionDelay="0s";
@@ -26,66 +24,40 @@ function closeMenu() {
 }
 
 
-function changeBackground() {
-  if (document.body.scrollTop > 850 && document.body.scrollTop < 2650 || document.documentElement.scrollTop > 850 && document.documentElement.scrollTop < 2650){
-  document.getElementById("navbar").style.top="-150px";
-  document.getElementById("navbar").style.transitionDelay="1.2s";
-  document.getElementsByClassName("gallery")[0].style.filter="opacity(0)";
-  document.getElementsByClassName("gallery")[1].style.filter="opacity(0)";
-  document.getElementsByClassName("gallery")[0].style.transitionDelay="0.7s";
-  document.getElementsByClassName("gallery")[1].style.transitionDelay="0.7s";
-  document.getElementById("home-nav").style.filter="opacity(0)";
-  document.getElementById("gallery-nav").style.filter="opacity(0)";
-  document.getElementById("contact-nav").style.filter="opacity(0)";
-  document.getElementById("home-nav").style.transitionDelay="0.3s";
-  document.getElementById("gallery-nav").style.transitionDelay="0.6s";
-  document.getElementById("contact-nav").style.transitionDelay="0.9s";
-}
+function hideNavbar() {
+  if (
+    document.body.scrollTop > 850 ||
+    document.documentElement.scrollTop > 850
+  ) {
 
-else if (document.body.scrollTop > 2700 || document.documentElement.scrollTop > 2700){
-document.getElementById("navbar").style.top="-200px";
-document.getElementById("navbar").style.transitionDelay="1.2s";
-document.getElementsByClassName("gallery")[0].style.filter="opacity(0)";
-document.getElementsByClassName("gallery")[1].style.filter="opacity(0)";
-document.getElementsByClassName("gallery")[0].style.transitionDelay="0.7s";
-document.getElementsByClassName("gallery")[1].style.transitionDelay="0.7s";
-document.getElementById("home-nav").style.filter="opacity(0)";
-document.getElementById("gallery-nav").style.filter="opacity(0)";
-document.getElementById("contact-nav").style.filter="opacity(0)";
-document.getElementById("home-nav").style.transitionDelay="0.3s";
-document.getElementById("gallery-nav").style.transitionDelay="0.6s";
-document.getElementById("contact-nav").style.transitionDelay="0.9s";
-}
-
-  else {
-    document.getElementById("navbar").style.top="0px";
-    document.getElementById("navbar").style.transitionDelay="0s";
-    document.getElementsByClassName("gallery")[0].style.filter="opacity(1)";
-    document.getElementsByClassName("gallery")[1].style.filter="opacity(1)";
-    document.getElementsByClassName("gallery")[0].style.transitionDelay="1.2s";
-    document.getElementsByClassName("gallery")[1].style.transitionDelay="1.2s";
-    document.getElementById("home-nav").style.filter="opacity(1)";
-    document.getElementById("gallery-nav").style.filter="opacity(1)";
-    document.getElementById("contact-nav").style.filter="opacity(1)";
-    document.getElementById("home-nav").style.transitionDelay="0.6s";
-    document.getElementById("gallery-nav").style.transitionDelay="0.9s";
-    document.getElementById("contact-nav").style.transitionDelay="1.2s";
+    document.getElementById("navbar").style.top = "-200px";
+    document.getElementById("navbar").style.transitionDelay = "1.2s";
+    document.getElementsByClassName("gallery")[0].style.filter =
+      "opacity(0)";
+    document.getElementsByClassName(
+      "gallery"
+    )[0].style.transitionDelay = "0.7s";
+    document.getElementById("home-nav").style.filter = "opacity(0)";
+    document.getElementById("gallery-nav").style.filter =
+      "opacity(0)";
+    document.getElementById("contact-nav").style.filter =
+      "opacity(0)";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+    document.getElementById("navbar").style.transitionDelay = "0s";
+    document.getElementsByClassName("gallery")[0].style.filter =
+      "opacity(1)";
+    document.getElementById("home-nav").style.filter = "opacity(1)";
+    document.getElementById("gallery-nav").style.filter =
+      "opacity(1)";
+    document.getElementById("contact-nav").style.filter =
+      "opacity(1)";
   }
 }
 
 
-
-function fadePhotos() {
-  if (document.body.scrollTop > 1850 || document.documentElement.scrollTop > 1850){
-  document.getElementsByClassName("image-small")[0].style.filter="opacity(1)";
-  document.getElementsByClassName("image-small")[1].style.filter="opacity(1)";
-  document.getElementsByClassName("image-small")[2].style.filter="opacity(1)";
-}
-}
-
 window.onscroll = function() {
-  fadePhotos()
-  changeBackground()
+  hideNavbar()
 }
 
 $('.single-item-slider').slick({
@@ -164,7 +136,7 @@ function linkToIcon() {
     document.getElementById("home-link").innerHTML =
       "NOWE EKSPOZYCJE";
     document.getElementById("gallery-link").innerHTML =
-      "GALERIA ";
+      "GALERIA";
     document.getElementById("contact-link").innerHTML =
       "KONTAKT";
   }
