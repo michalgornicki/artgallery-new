@@ -333,7 +333,6 @@ a {
     font-size: 5vmin;
     padding-left: 5%;
     padding-right: 5%;
-    text-align: justify;
     line-height: 3vmin;
     background-color: rgb(255, 255, 255);
     color: black;
@@ -357,7 +356,17 @@ a {
   }
 
   .container-text{
-    font-size: 4.5vmin;
+    font-size: 5.2vmin;
+    line-height: 175%;
+  }
+
+  #slide-title {
+    text-align: center;
+    font-size: 6vmax;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 
 }
