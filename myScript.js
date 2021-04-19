@@ -1,7 +1,6 @@
 window.onload = function () {
   linkToIcon();
-  document.getElementsByClassName("content")[0].style.filter =
-    "brightness(1)";
+
   document.getElementById("navbar").style.filter = "opacity(1)";
   document.getElementsByClassName("gallery")[0].style.filter =
     "opacity(1)";
@@ -17,7 +16,7 @@ window.onload = function () {
 
 
 
-function changeBackground() {
+function hideNavbar() {
   if (
     document.body.scrollTop > 850 ||
     document.documentElement.scrollTop > 850
@@ -31,53 +30,26 @@ function changeBackground() {
     document.getElementsByClassName(
       "gallery"
     )[0].style.transitionDelay = "0.7s";
-    document.getElementsByClassName(
-      "gallery"
-    )[1].style.transitionDelay = "0.7s";
     document.getElementById("home-nav").style.filter = "opacity(0)";
     document.getElementById("gallery-nav").style.filter =
       "opacity(0)";
     document.getElementById("contact-nav").style.filter =
       "opacity(0)";
-    document.getElementById("home-nav").style.transitionDelay =
-      "0.3s";
-    document.getElementById("gallery-nav").style.transitionDelay =
-      "0.6s";
-    document.getElementById("contact-nav").style.transitionDelay =
-      "0.9s";
-    document.getElementById("container0").style.backgroundColor =
-      "black";
   } else {
     document.getElementById("navbar").style.top = "0px";
     document.getElementById("navbar").style.transitionDelay = "0s";
     document.getElementsByClassName("gallery")[0].style.filter =
       "opacity(1)";
-    document.getElementsByClassName("gallery")[1].style.filter =
-      "opacity(1)";
-    document.getElementsByClassName(
-      "gallery"
-    )[0].style.transitionDelay = "1.2s";
-    document.getElementsByClassName(
-      "gallery"
-    )[1].style.transitionDelay = "1.2s";
     document.getElementById("home-nav").style.filter = "opacity(1)";
     document.getElementById("gallery-nav").style.filter =
       "opacity(1)";
     document.getElementById("contact-nav").style.filter =
       "opacity(1)";
-    document.getElementById("home-nav").style.transitionDelay =
-      "0.6s";
-    document.getElementById("gallery-nav").style.transitionDelay =
-      "0.9s";
-    document.getElementById("contact-nav").style.transitionDelay =
-      "1.2s";
-    document.getElementById("container0").style.backgroundColor =
-      "white";
   }
 }
 
 window.onscroll = function() {
-  changeBackground()
+  hideNavbar()
 }
 
 $(".single-item-fade").slick({
